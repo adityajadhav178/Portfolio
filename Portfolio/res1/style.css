@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Langar&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+html , body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-image: url("pexels-sora-shimazaki-5668514.jpg");
+    background-size:100%;
+    background-position: center;
+    position: relative;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.8); /* Adjust color and opacity as needed */
+    z-index: 1;
+  }
+
+  .container > * {
+    position: relative;
+    z-index: 2;
+    /* color: #66fcf1; Adjust as needed */
+    color: white;
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: 0.05em;
+    overflow: hidden;
+  }
+
+.f {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    background-color:#b19f9e;
+}
+
+.s {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    background-color:#479761;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s .page{
+    height: 60%;
+    width: 80%;
+    color: #121212;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    letter-spacing: 0.1em;
+}
+#early {
+    display: inline-block;
+
+}
+#late {
+    display: inline-block;
+}
+
+.s .page #jadhav {
+    font-family: "Langar", system-ui;
+    color: #b19f9e;
+}
+
+.content {
+    padding-top: 35px;
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 8%;
+}
+
+.empty {
+    height: 15%;
+}
+.hidden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+    border:none;
+    background-color: transparent;
+    width: 100%;
+    list-style: none;
+    opacity: 1;
+    overflow: hidden; /* Initial position off-screen */
+  }
+
+.hidden a {
+    text-decoration-color: #b19f9e;
+    font-size: 20px;
+    color: white;
+    padding: 40px;
+    display: inline-block;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+.hidden a:hover {
+    text-shadow: 0 0 10px #b19f9e, /* Add glow effect */
+                 0 0 20px #b19f9e,
+                 0 0 30px #b19f9e;
+    transform: scale(1.2);
+}
+
+.hidden .active {
+    text-shadow: 0 0 10px #479761, /* Add glow effect */
+                 0 0 20px #479761,
+                 0 0 30px #479761;
+    transform: scale(1.2);
+    text-decoration-color:#479761;
+}
+
+.title {
+    height: 72%;
+    font-size: 50px;
+    position: relative;
+    line-height: 300%;
+    padding: 60px;
+    margin-top: 20px;
+    font-weight: lighter;
+}
+
+.title #l1 {
+    text-align: left;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.title #l2 {
+    font-family: "Langar", system-ui;
+    color: #479761;
+    text-align: center;
+    overflow: hidden;
+}
+
+.title #l2 span {
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    font-family: "Langar", system-ui;
+    font-size: larger;
+}
+
+.title #l3 {
+    text-align: right;
+}

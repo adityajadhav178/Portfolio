@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-image: url("pexels-sora-shimazaki-5668514.jpg");
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.8);
+    z-index: 1;
+}
+
+/* Styling for all children of container */
+.container > * {
+    position: relative;
+    z-index: 2;
+    color: white; /* Adjust as needed */
+    font-family: "Merriweather Sans", sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: 0.05em;
+    overflow: hidden;
+}
+
+/* Styling for the content section */
+.content {
+    padding-top: 35px;
+    height: 100%;
+    width: 100%;
+}
+
+/* Styling the navigation bar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 8%;
+}
+
+.empty {
+    height: 15%;
+}
+/* Styling the navigation links */
+.hidden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 180px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    list-style: none;
+    opacity: 1;
+    overflow: hidden; /* Initial position off-screen */
+}
+
+.hidden a {
+    text-decoration-color: #b19f9e;
+    font-size: 20px;
+    color: white;
+    padding: 40px;
+    display: inline-block;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.hidden a:hover {
+    text-shadow: 0 0 10px #b19f9e, /* Add glow effect */
+                 0 0 20px #b19f9e,
+                 0 0 30px #b19f9e;
+    transform: scale(1.2);
+}
+
+.hidden .active {
+    text-shadow: 0 0 10px #479761, /* Add glow effect */
+                 0 0 20px #479761,
+                 0 0 30px #479761;
+    transform: scale(1.2);
+    text-decoration-color: #479761;
+}
+
+.work {
+    height: 75%;
+    width: 100%;
+}
+
+.first {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.second {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.p1{
+    height: 225px;
+    width: 225px;
+    border-radius: 50%;
+    background-color: #479761;
+    background-image: url("linkdin\ logo.png");
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+
+.p2{
+    height: 225px;
+    width: 225px;
+    border-radius: 50%;
+    background-color: #479761;
+    background-image: url("gitlogo.png");
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+
+.p3{
+    height: 225px;
+    width: 225px;
+    border-radius: 50%;
+    background-color: #479761;
+    background-image: url("instagram.jpeg");
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+
+.p4{
+    height: 225px;
+    width: 225px;
+    border-radius: 50%;
+    background-color: #479761;
+    background-image: url("x\ fix.png");
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
